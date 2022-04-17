@@ -138,7 +138,16 @@ h4{
 .iconos-container h4{
   padding: 10px;
 }
-
+.milei{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.milei img{
+  width: 100%;
+}
 /*
 --- ARCADE BUTTON ---
 Link: https://codepen.io/mkvug/pen/meJyr
