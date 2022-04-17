@@ -34,13 +34,13 @@
 			<div class="iconos-container">
 				<h4>Compartir</h4>
 				<a href="https://twitter.com/intent/tweet?text=%F0%9F%8E%B6%20Milei%20%20Sounds%20-%20La%20web%20app%20con%20los%20sonidos%20del%20diputado:%0Dhttps://speedbuild98.github.io/SoundsTable/%0D" class="iconos"><i class="uil uil-twitter-alt"></i></a>
-
 				<a href="https://www.facebook.com/sharer/sharer.php?u=https://speedbuild98.github.io/SoundsTable/" class="iconos"><i class="uil uil-facebook-f"></i></a>
-
 				<a href="https://t.me/share/url?url=https://speedbuild98.github.io/SoundsTable/" class="iconos"><i class="uil uil-telegram-alt"></i></a>
-			
 			</div>
 			<h3 class="subtitle">sounds table</h3>
+			<a href="#" class="scrollup" id="scroll-up">
+				<i class="uil uil-arrow-up scrollup__icon"></i>
+			  </a>
 		</div>
 	</header>
 	<div id="main">
@@ -53,7 +53,13 @@
 			initApp("./data.json");
 		}
 	</script>
-
-
+	<script>
+				function scrollUp(){
+		const scrollUp = document.getElementById('scroll-up');
+		// When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+		if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+		}
+		window.addEventListener('scroll', scrollUp)
+	</script>
 </body>
 </html>
