@@ -147,6 +147,7 @@ h4{
 }
 .milei img{
   width: 100%;
+  image-rendering: crisp-edges;
 }
 .lion{
   position: relative;
