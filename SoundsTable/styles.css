@@ -148,6 +148,11 @@ h4{
 .milei img{
   width: 100%;
 }
+.lion{
+  position: relative;
+  width: 10%;
+  left: 45%;
+}
 /*
 --- ARCADE BUTTON ---
 Link: https://codepen.io/mkvug/pen/meJyr
