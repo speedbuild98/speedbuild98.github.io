@@ -2,8 +2,20 @@
 	"title": "MILEI 2023",
 	"sounds" : [
 		{ 
-			"text" : "Alberdi" ,
-			"soundURL" : "https://github.com/speedbuild98/speedbuild98.github.io/blob/main/SoundsTable/sounds/Alberdi.mp3?raw=true"
+			"text" : "Digamos" ,
+			"soundURL" : "https://github.com/speedbuild98/speedbuild98.github.io/blob/main/SoundsTable/sounds/Digamos.mp3?raw=true"
+		},
+		{ 
+			"text" : "Carguitos" ,
+			"soundURL" : "https://github.com/speedbuild98/speedbuild98.github.io/blob/main/SoundsTable/sounds/Carguitos.mp3?raw=true"
+		},
+		{ 
+			"text" : "Integrantes" ,
+			"soundURL" : "https://github.com/speedbuild98/speedbuild98.github.io/blob/main/SoundsTable/sounds/Integrantes.mp3?raw=true"
+		},
+		{ 
+			"text" : "Leones" ,
+			"soundURL" : "https://github.com/speedbuild98/speedbuild98.github.io/blob/main/SoundsTable/sounds/Leones.mp3?raw=true"
 		},
 		{ 
 			"text" : "Amadeo" ,
