@@ -1,0 +1,185 @@
+{
+	"title": "MILEI 2023",
+	"sounds" : [
+		{ 
+			"text" : "Alberdi" ,
+			"soundURL" : "/sounds/Alberdi.mp3"
+		},
+		{ 
+			"text" : "Amadeo" ,
+			"soundURL" : "/sounds/Amadeo.mp3"
+		},
+		{ 
+			"text" : "Argentina" ,
+			"soundURL" : "/sounds/Argentina.mp3"
+		},
+		{ 
+			"text" : "Asquerosas" ,
+			"soundURL" : "/sounds/Asquerosas.mp3"
+		},
+		{ 
+			"text" : "Bananas" ,
+			"soundURL" : "/sounds/Bananas.mp3"
+		},
+		{ 
+			"text" : "Banco Central" ,
+			"soundURL" : "/sounds/Banco Central.mp3"
+		},
+		{ 
+			"text" : "Batalla" ,
+			"soundURL" : "/sounds/Batalla.mp3"
+		},
+		{ 
+			"text" : "Bota del estado" ,
+			"soundURL" : "/sounds/Bota del estado.mp3"
+		},
+		{ 
+			"text" : "Cuadernos" ,
+			"soundURL" : "/sounds/Cuadernos.mp3"
+		},
+		{ 
+			"text" : "Culo ajeno" ,
+			"soundURL" : "/sounds/Culo Ajeno.mp3"
+		},
+		{ 
+			"text" : "Datos" ,
+			"soundURL" : "/sounds/Datos.mp3"
+		},
+		{ 
+			"text" : "Derecho" ,
+			"soundURL" : "/sounds/Derecho.mp3"
+		},
+		{ 
+			"text" : "El peso" ,
+			"soundURL" : "/sounds/El peso.mp3"
+		},
+		{ 
+			"text" : "Empobrecedor" ,
+			"soundURL" : "/sounds/Empobrecedor.mp3"
+		},
+		{ 
+			"text" : "En el orto" ,
+			"soundURL" : "/sounds/En el orto.mp3"
+		},
+		{ 
+			"text" : "Esclavos" ,
+			"soundURL" : "/sounds/Esclavos.mp3"
+		},
+		{ 
+			"text" : "Espectáculos" ,
+			"soundURL" : "/sounds/Espectaculos.mp3"
+		},
+		{ 
+			"text" : "Espert presidente" ,
+			"soundURL" : "/sounds/Espert presidente.mp3"
+		},
+		{ 
+			"text" : "Gratis" ,
+			"soundURL" : "/sounds/Gratis.mp3"
+		},
+		{ 
+			"text" : "Grieta" ,
+			"soundURL" : "/sounds/Grieta.mp3"
+		},
+		{ 
+			"text" : "Impuestos" ,
+			"soundURL" : "/sounds/Impuestos.mp3"
+		},
+		{ 
+			"text" : "Ineptos" ,
+			"soundURL" : "/sounds/Ineptos.mp3"
+		},
+		{ 
+			"text" : "Justicia social" ,
+			"soundURL" : "/sounds/Justicia Social.mp3"
+		},
+		{ 
+			"text" : "Kirchnerismo" ,
+			"soundURL" : "/sounds/Kirchnerismo.mp3"
+		},
+		{ 
+			"text" : "Locura" ,
+			"soundURL" : "/sounds/Locura.mp3"
+		},
+		{ 
+			"text" : "Marcos" ,
+			"soundURL" : "/sounds/Marcos.mp3"
+		},
+		{ 
+			"text" : "Minifalda" ,
+			"soundURL" : "/sounds/Minifalda.mp3"
+		},
+		{ 
+			"text" : "Muro" ,
+			"soundURL" : "/sounds/Muro.mp3"
+		},
+		{ 
+			"text" : "Nerón" ,
+			"soundURL" : "/sounds/Neron.mp3"
+		},
+		{ 
+			"text" : "Nunca" ,
+			"soundURL" : "/sounds/Nunca.mp3"
+		},
+		{ 
+			"text" : "Órgano" ,
+			"soundURL" : "/sounds/Organo.mp3"
+		},
+		{ 
+			"text" : "Paises libres" ,
+			"soundURL" : "/sounds/Paises libres.mp3"
+		},
+		{ 
+			"text" : "Patético" ,
+			"soundURL" : "/sounds/Patetico.mp3"
+		},
+		{ 
+			"text" : "Pelotas" ,
+			"soundURL" : "/sounds/Pelotas.mp3"
+		},
+		{ 
+			"text" : "Pelotudo" ,
+			"soundURL" : "/sounds/Pelotudo.mp3"
+		},
+		{ 
+			"text" : "Peronismo" ,
+			"soundURL" : "/sounds/Esclavos.mp3"
+		},
+		{ 
+			"text" : "Plata" ,
+			"soundURL" : "/sounds/Plata.mp3"
+		},
+		{ 
+			"text" : "Porongas" ,
+			"soundURL" : "/sounds/Porongas.mp3"
+		},
+		{ 
+			"text" : "Precios" ,
+			"soundURL" : "/sounds/Precios.mp3"
+		},
+		{ 
+			"text" : "Robinson Crusoe" ,
+			"soundURL" : "/sounds/Robinson Crusoe.mp3"
+		},
+		{ 
+			"text" : "Impuestos" ,
+			"soundURL" : "/sounds/Se financia con impuestos.mp3"
+		},
+		{ 
+			"text" : "Superman" ,
+			"soundURL" : "/sounds/Superman.mp3"
+		},
+		{ 
+			"text" : "Tiemblen" ,
+			"soundURL" : "/sounds/Tiemblen.mp3"
+		},
+		{ 
+			"text" : "Vaca sagrada" ,
+			"soundURL" : "/sounds/Vaca sagrada.mp3"
+		},
+		{ 
+			"text" : "Viva la libertad" ,
+			"soundURL" : "/sounds/Viva la libertad.mp3"
+		}
+	]
+}

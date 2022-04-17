@@ -1,0 +1,320 @@
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input {
+	-webkit-user-select: auto !important;
+	-khtml-user-select: auto !important;
+	-moz-user-select: auto !important;
+	-ms-user-select: auto !important;
+	user-select: auto !important;
+}
+
+html {
+  background:#1C1B18;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.5);
+  font-display: swap;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #F9DA1B;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 12.5vh;
+    text-align: center;
+    margin: 0 !important;
+}
+.div-header{
+  margin-top: 5px;
+  border-top:2px solid #F9DA1B;
+  justify-content: center;
+}
+.milei{
+  width: 5em;
+}
+.uil{
+  color: #F9DA1B;
+  padding: .5em;
+  font-size: 1.5em;
+}
+h4{
+  font-size: 1.3em;
+}
+.uil:hover{
+  border-bottom:2px solid #F9DA1B;
+}
+.subtitle{
+  border-top:2px solid #F9DA1B;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: #F9DA1B;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 4vh;
+  text-align: center;
+  font-family: "lobster",cursive;
+  margin: 0 0 20px !important;
+}
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 90%;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+}
+
+#content div {
+    width: 200px;
+    height: 200px;
+}
+
+#share {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 29px;
+    margin-right: 45px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+}
+
+.cafecito{
+  background-color: #E9E1FF;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 2px;
+  border-radius: 6px;
+  height: 2em;
+}
+.cafecito img{
+  display: flex;
+  justify-content: center;
+  padding-right:5px ;
+}
+
+.cafecito a{
+  color: #8672C3;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cafecito a:hover{
+  color: #b917eb88;
+}
+.iconos-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F9DA1B;
+}
+
+.iconos-container h4{
+  padding: 10px;
+}
+
+/*
+--- ARCADE BUTTON ---
+Link: https://codepen.io/mkvug/pen/meJyr
+<a id="button">Click Me</a>
+*/
+a.button {
+  font-family: "lobster", cursive;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 100;
+  color: #ddd;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  background: rgb(0, 140, 255);
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+  margin: -74px 0 0 -75px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 -5px 20px rgba(0,0,0,0.5), inset 0 15px 20px rgba(255,255,255,0.5), 0 5px 10px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.5);
+  box-shadow: inset 0 -5px 20px rgba(0,0,0,0.5), inset 0 15px 20px rgba(255,255,255,0.5), 0 5px 10px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: -3px 5px 0 0;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  text-decoration: none;
+}
+a.button:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: -5;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgb(0, 140, 255);
+  top: -15px;
+  left: -20px;
+  -webkit-box-shadow: inset 0 7px 15px rgba(255,255,255,0.5), inset 0 -7px 15px rgba(0,0,0,0.5);
+  box-shadow: inset 0 7px 15px rgba(255,255,255,0.5), inset 0 -7px 15px rgba(0,0,0,0.5);
+}
+
+a.button:active {
+  -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  color: #ffeded;
+}
+
+.tag {
+  position: absolute;
+  color: #363232;
+  text-shadow: 1px 1px 1px #b0b0b0;
+  margin-top: 20px;
+  margin-left: 16px;
+  z-index: 10;
+}
+
+.tagNew {
+  color: #ffeb3b;
+  text-shadow: 1px 2px 1px #030303;
+  font-style: italic;
+}
+
+
+/* ----- MEDIA QUERIES ------ */
+/* Large desktop */
+@media (min-width: 1200px) {
+  a.button {
+ 	font-size: 1.5em;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  html {
+    /* background: url(images/highRes.jpg) no-repeat center center fixed; */
+    background:#1C1B18;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 7.5vh;
+    margin-bottom: 40px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html {
+    background:#1C1B18;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  header .mainLogo {
+    width: 35px;
+    height: 35px;
+    margin-top: 27px;
+    margin-right: 1px;
+  }
+
+  h1 {
+    font-size: 6vh;
+  }
+
+  #share {
+    margin-top: 27px;
+    margin-bottom: 17px;
+    width: 100%;
+  }
+
+  header .mainLogoXks {
+    width: 108px;
+    height: 63px;
+  }
+
+  #content div {
+    width: 100px;
+    height: 125px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 230x;
+  }
+
+  a.button {
+    font-size: 3vw;
+    width: 60px;
+    height: 60px;
+    padding: 0px 5px 0 0;
+    margin: -50px 0 0 -25px;
+  }
+
+  a.button:before {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    top: -15px;
+    left: -20px;
+    -webkit-box-shadow: inset 0 7px 15px rgba(255,255,255,0.5), inset 0 -7px 15px rgba(0,0,0,0.5);
+    box-shadow: inset 0 7px 15px rgba(255,255,255,0.5), inset 0 -7px 15px rgba(0,0,0,0.5);
+  }
+
+  .tag {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: x-small;
+  }
+}
