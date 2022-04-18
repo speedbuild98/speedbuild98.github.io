@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro 🔔| Gallardo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cafecito">
+      <div class="cafecito-container">
+        <img src="https://raw.githubusercontent.com/speedbuild98/speedbuild98.github.io/7fd6ee24466312f06a4b884970f4fd57f08fc60e/SoundsTable/images/cafecito_logo.svg" alt="cafecito logo">
+				<a href="https://cafecito.app/speedbuild" class="icono">Ayudame con un cafecito para poder tener una notebook para estudiar.</a>
+      </div>
+    </header>
+    <h1>Pomodro ⏲ pa labura'</h1>
+    <figure class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">¡A trabajar!</button>
+      <button class="reset">Reiniciar</button>
+      <button class="pause">Pausa</button>
+    </div>
+
+    <form action=".">
+      <label for="focusTime">Tiempo de trabajo</label>
+      <input type="number" value="1" id="focusTime" />
+      <label for="breakTime">Tiempo de descancito</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit">Guardar</button>
+    </form>
+    <footer>
+      Coded by
+      <a
+        href="speedbuild98.github.io"
+        target="_blank"
+        >Gallardo</a
+      >
+    </footer>
+
+    <script src="settings.js"></script>
+    <script src="timer.js"></script>
+    <script src="progress.js"></script>
+  </body>
+</html>
