@@ -39,6 +39,7 @@ h1{
   margin-top: 5px;
   border-top:2px solid #F9DA1B;
   justify-content: center;
+  text-align: center;
 }
 .milei{
   width: 5em;
@@ -378,3 +379,28 @@ a.button:active {
   background-color: #ffeb3b;
   border-radius: .5rem;
 }
+.container-new{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 !important;
+}
+.menu-nav{
+  text-align: center;
+}
+
+.indexlink{
+  color:#000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius:8px;
+  background-color: #ffeb3b;
+  padding: 2px;
+}
+
+.indexlink:hover {
+  color: #ffeb3b;
+  background-color: #000000
+}
+
