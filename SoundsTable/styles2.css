@@ -67,3 +67,58 @@ img:hover{
         font-size: 1.8rem;
     }
 }
+
+.cafecito{
+    position: absolute;
+    background-color: #E9E1FF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2px;
+    border-radius: 6px;
+    height: 2em;
+    bottom: 0;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .cafecito img{
+    display: flex;
+    justify-content: center;
+    padding-right:4px;
+    border: none;
+    width: 2.5em;
+    margin: 0in;
+    box-shadow: none;
+  }
+  
+  .cafecito a{
+    color: #8672C3;
+    text-decoration: none;
+    font-size: .75em;
+    font-weight: 700;
+  }
+  
+  .cafecito a:hover{
+    color: #b917eb88;
+  }
+  .iconos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9DA1B;
+  }
+
+.XD{
+  top: 0;
+  color: #F9DA1B;
+  background-color: #000000;
+  width: 100%;
+  border-bottom: 1px solid #F9DA1B;
+}
+
+.XD a{
+    color: #F9DA1B;
+}
