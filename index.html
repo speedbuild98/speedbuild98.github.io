@@ -14,7 +14,21 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <!--==================== LOADER ====================-->
+            <script>document.onreadystatechange = function() {
+                if (document.readyState !== "complete") {
+                    document.querySelector(
+                      "body").style.visibility = "hidden";
+                    document.querySelector(
+                      "#spinner").style.visibility = "visible";
+                } else {
+                    document.querySelector(
+                      "#spinner").style.display = "none";
+                    document.querySelector(
+                      "body").style.visibility = "visible";
+                }
+            };</script>
+        <!--==================== TITLE ====================-->
         <title>Gallardo Portfolio</title>
     </head>
     <body>
@@ -68,6 +82,16 @@
             </nav>            
         </header>
 
+        <!--==================== LOADER ====================-->
+        <div id="spinner" class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== INICIO ====================-->
@@ -566,7 +590,6 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
-
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
     </body>
