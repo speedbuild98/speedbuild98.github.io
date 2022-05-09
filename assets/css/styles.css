@@ -976,11 +976,13 @@ width: 80%;
  
  .loader-square {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 28px;
   height: 28px;
-  margin: 2px;
+  margin: auto;
   border-radius: 0px;
   background: var(--first-color);
   background-size: cover;
