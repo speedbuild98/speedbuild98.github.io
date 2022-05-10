@@ -1245,15 +1245,14 @@ width: 80%;
   filter: drop-shadow(-2px 2px 15px var(--first-color));
 }
 
-.xd{
-  filter:none!important;
-}
-
 .button{
   animation: brillar 8s infinite;
   animation: wiggle 5s infinite;
 }
-
+.xd{
+  filter:none!important;
+  animation: none;
+}
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
