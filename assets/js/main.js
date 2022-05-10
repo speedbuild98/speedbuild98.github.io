@@ -46,13 +46,6 @@ function toggleSkills(){
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
-/*==================== QUALIFICATION TABS ====================*/
-var mySwiper = new Swiper('.swiper-container', {
-    onInit: function (slider) {
-        debugger;
-    }
-}); 
-
 /*==================== SERVICES MODAL ====================*/
 var modalViews = document.querySelectorAll('.services__modal'),
     modalBtns = document.querySelectorAll('.services__button'),
