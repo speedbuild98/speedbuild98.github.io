@@ -1254,11 +1254,6 @@ width: 80%;
   animation: wiggle 5s infinite;
 }
 
-.nav__toggle{
-  animation: brillar 5s infinite;
-  animation: wiggle 3s infinite;
-}
-
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
