@@ -7,13 +7,10 @@
         <!--==================== Sé que no puse metatags, es mi portfolio nomás. ====================-->
 
         <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">        
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/splide-4.0.1/dist/css/splide.min.css">
         <!--==================== LOADER ====================-->
             <script>document.onreadystatechange = function() {
                 if (document.readyState !== "complete") {
@@ -130,7 +127,7 @@
                         <div class="home__data contenedor">
                             <h1 class="home__title">¡Hello, i'm <span id="nombre">Leonel!</span></h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
-                            <p class="home__description">Soy un joven de 23 años con mucho interés en Web [3.0]. Actualmente estoy realizando un Bootcamp para ser un Full-stack Web Developer.</p>
+                            <p class="home__description">Soy un joven de 23 años con mucho interés en aprender a desarrollar Web [3.0]. Actualmente estoy realizando un Bootcamp para ser un Full-stack Web Developer.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact<i class="uil uil-message button__icon"></i>
                             </a>
@@ -209,7 +206,7 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">30%</span>
+                                        <span class="skills__number">50%</span>
                                     </div>
                                     <div class="skills__bar">
                                         <span class="skills__percentage skills__js"></span>
@@ -218,8 +215,8 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">GitHub</h3>
-                                        <span class="skills__number">50%</span>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
                                         <span class="skills__percentage skills__github"></span>
@@ -298,7 +295,7 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Office</h3>
+                                        <h3 class="skills__name">Microsoft Office</h3>
                                         <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -451,26 +448,71 @@
             </section>
 
             <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
+            <section class="portfolio section splide" id="portfolio">
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">My recent work</span>
 
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
+                <div class="portfolio__container container swiper-container splide__track">
+                    <ul class="swiper-wrapper splide__list">
                         <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <li class="portfolio__content grid swiper-slide splide__slide">
                             <img class="portfolio__img" src="assets/img/portfolio1.jpg" alt="portfolio1">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Simple responsive website</h3>
-                                <p class="potafolio__description">Website adaptable to any device.</p>
-                                <a href="http://merlowebs.online/" target:"_blank" class="button button--flex button--small portfolio__button">
-                                Ver
+                                <h3 class="portfolio__title">Web Responsive simple</h3>
+                                <p class="potafolio__description">Una página web básica que se adapta a cualquier dispositivo.<BR><STRONG>[HTML-CSS-BOOTSTRAP]</STRONG></p>
+                                <a href="https://merlowebs-gallardo.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                DEMO
                                 <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </div>                       
-                    </div>
+                        </li>
+                        <!--==================== PORTFOLIO 2====================-->
+                        <li class="portfolio__content grid swiper-slide splide__slide">
+                            <img class="portfolio__img" src="assets/img/portfolio2.jpg" alt="portfolio2">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">To Do List</h3>
+                                <p class="potafolio__description">Una simple web app para anotar tareas.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                                <a href="https://gallardo-todolist.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==================== PORTFOLIO 3====================-->
+                        <li class="portfolio__content grid swiper-slide splide__slide">
+                            <img class="portfolio__img" src="assets/img/portfolio3.jpg" alt="portfolio3">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Calculator JS</h3>
+                                <p class="potafolio__description">Una pequeña calculadora funcional.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                                <a href="https://gallardo-calculadora.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==================== PORTFOLIO 4====================-->
+                        <li class="portfolio__content grid swiper-slide splide__slide">
+                            <img class="portfolio__img" src="assets/img/portfolio4.jpg" alt="portfolio3">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Reloj pomodoro</h3>
+                                <p class="potafolio__description">Un reloj pomodoro para tiempos de estudio y concentración.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                                <a href="https://gallardo-pomodoro.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </li>                      
+                    </ul>
+                     <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
 
@@ -587,10 +629,11 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/splide-4.0.1/dist/js/splide.min.js"></script>   
+        <script>
+            new Splide( '.splide' ).mount();
+          </script>     
     </body>
 </html>
