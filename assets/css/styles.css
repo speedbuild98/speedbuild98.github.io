@@ -7,6 +7,8 @@
 
     /*========== Colores ==========*/
     --hue-color: 200; 
+    --pencil-green: #09d56e;
+    --pencil-dark: #232123;
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 100%, 40%);
@@ -939,151 +941,128 @@ width: 80%;
   border-radius: .5rem;
 }
 /*========== LOADER ==========*/
-@keyframes square-animation {
-  0% {
-   left: 0;
-   top: 0;
-  }
- 
-  10.5% {
-   left: 0;
-   top: 0;
-  }
- 
-  12.5% {
-   left: 32px;
-   top: 0;
-  }
- 
-  23% {
-   left: 32px;
-   top: 0;
-  }
- 
-  25% {
-   left: 64px;
-   top: 0;
-  }
- 
-  35.5% {
-   left: 64px;
-   top: 0;
-  }
- 
-  37.5% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  48% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  50% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  60.5% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  62.5% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  73% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  75% {
-   left: 0;
-   top: 64px;
-  }
- 
-  85.5% {
-   left: 0;
-   top: 64px;
-  }
- 
-  87.5% {
-   left: 0;
-   top: 32px;
-  }
- 
-  98% {
-   left: 0;
-   top: 32px;
-  }
- 
-  100% {
-   left: 0;
-   top: 0;
-  }
- }
- .spinerContainer{
-   margin: 0 auto;
-   height: 100vh;
-   width: 100vw;
- }
- .loader {
+.pencil {
   position: relative;
-  width: 96px;
-  height: 96px;
-  transform: rotate(45deg);
+  width: 300px;
+  height: 40px;
+  transform-origin: center;
+  transform: rotate(135deg);
+  animation: pencil-animation 10s infinite;
  }
- 
- .loader-square {
-  position: absolute;
-  top: 50;
-  left: 50;
-  transform: translate(-50%, 0);
-  width: 28px;
-  height: 28px;
-  margin: 2px;
-  border-radius: 0px;
-  background: var(--first-color);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  animation: square-animation 10s ease-in-out infinite both;
- }
- 
- .loader-square:nth-of-type(0) {
-  animation-delay: 0s;
- }
- 
- .loader-square:nth-of-type(1) {
-  animation-delay: -1.4285714286s;
- }
- 
- .loader-square:nth-of-type(2) {
-  animation-delay: -2.8571428571s;
- }
- 
- .loader-square:nth-of-type(3) {
-  animation-delay: -4.2857142857s;
- }
- 
- .loader-square:nth-of-type(4) {
-  animation-delay: -5.7142857143s;
- }
- 
- .loader-square:nth-of-type(5) {
-  animation-delay: -7.1428571429s;
- }
- 
- .loader-square:nth-of-type(6) {
-  animation-delay: -8.5714285714s;
- }
- 
- .loader-square:nth-of-type(7) {
-  animation-delay: -10s;
- }
+  @keyframes pencil-animation {
+    0% {
+      transform: rotate(135deg);
+    }
+
+    20% {
+      transform: rotate(315deg);
+    }
+
+    45% {
+      transform: translateX(300px) rotate(315deg);
+    }
+
+    55% {
+      transform: translateX(300px) rotate(495deg);
+    }
+
+    100% {
+      transform: rotate(495deg);
+    }
+  }
+
+
+
+  .pencil__ball-point {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--pencil-green);
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+  }
+
+  .pencil__cap {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(20% 40%, 100% 0%, 100% 100%, 20% 60%);
+    background: var(--pencil-dark);
+    width: 12%;
+    height: 100%;
+  }
+
+  .pencil__cap-base {
+    position: absolute;
+    left: 12%;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: var(--pencil-dark);
+  }
+
+  .pencil__middle {
+    position: absolute;
+    left: calc(12% + 20px);
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: var(--pencil-green);
+  }
+
+  .pencil__eraser {
+    position: absolute;
+    left: calc(12% + 70% + 20px);
+    top: 0;
+    height: 100%;
+    width: 11%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--pencil-dark);
+  }
+
+
+.line {
+  @keyframes line-animation {
+    20% {
+      transform: scaleX(0);
+    }
+
+    45% {
+      transform: scaleX(0.6);
+    }
+
+    55% {
+      transform: scaleX(0.6);
+    }
+
+    100% {
+      transform: scaleX(0);
+    }
+  }
+
+  position: relative;
+  top: 80px;
+  right: 103px;
+  height: 10px;
+  width: 1000px;
+  z-index: -1;
+  border-radius: 50px;
+  background: var(--pencil-green);
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: line-animation 10s infinite;
+}
+
+h2 {
+  position: relative;
+  top: 150px;
+  right: 75px;
+}
+
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
