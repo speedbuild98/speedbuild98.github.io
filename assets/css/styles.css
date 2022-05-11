@@ -951,6 +951,7 @@ width: 80%;
   left: 0;
   right: 0;
   margin: auto;
+  filter: drop-shadow(5px 5px 1px var(--first-color));
 }
 .pulse:after {
   content: '';
@@ -964,6 +965,7 @@ width: 80%;
   -o-animation: 2s pulse linear infinite;
   animation: 2s pulse linear infinite;
     clip: rect(0, 0, 100px, 0);
+    filter: drop-shadow(5px 5px 1px var(--first-color));
 }
 .pulse:before {
   content: '';
