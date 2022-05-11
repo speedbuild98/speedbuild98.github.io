@@ -15,7 +15,7 @@
         <!--==================== LOADER ====================-->
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
             <script>
-            document.onreadystatechange = setTimeoutfunction();{
+            document.onreadystatechange = function(){
                 if (document.readyState !== "complete") {
                     document.querySelector(
                       "body").style.visibility = "hidden";
@@ -27,7 +27,7 @@
                     document.querySelector(
                       "body").style.visibility = "visible";
                 }
-            }2000;</script>
+            }</script>
         <!--==================== TITLE ====================-->
         <title>Gallardo Portfolio</title>
     </head>
