@@ -1025,7 +1025,7 @@ width: 80%;
   }
 
 
-.line {
+.linelapiz {
   position: relative;
   top: 80px;
   right: 103px;
@@ -1056,8 +1056,7 @@ width: 80%;
     transform: scaleX(0);
   }
 }
-
-h2 {
+#textolapiz {
   position: relative;
   top: 150px;
   right: 75px;
