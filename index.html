@@ -16,7 +16,7 @@
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
             <script>
             document.onreadystatechange = function() {
-                if (document.readyState === "complete") {
+                if (document.readyState !== "complete") {
                     document.querySelector(
                       "body").style.visibility = "hidden";
                     document.querySelector(
