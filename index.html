@@ -19,10 +19,10 @@
                     document.querySelector(
                       "body").style.visibility = "hidden";
                     document.querySelector(
-                      "#loader").style.visibility = "visible";
+                      ".spinner").style.visibility = "visible";
                 } else {
                     document.querySelector(
-                      "#loader").style.display = "none";
+                      ".spinner").style.display = "none";
                     document.querySelector(
                       "body").style.visibility = "visible";
                 }
@@ -82,17 +82,17 @@
         </header>
 
         <!--==================== LOADER ====================-->
-        <div id="loader">
-        <div class="pencil">
-            <div class="pencil__ball-point"></div>
-            <div class="pencil__cap"></div>
-            <div class="pencil__cap-base"></div>
-            <div class="pencil__middle"></div>
-            <div class="pencil__eraser"></div>
-          </div>
-          <div class="line"></div>
-          <h2>Page Loading...Please Wait</h2>
-        </div>
+        <div id="loader" class="spinner">
+            <div class="pencil">
+                <div class="pencil__ball-point"></div>
+                <div class="pencil__cap"></div>
+                <div class="pencil__cap-base"></div>
+                <div class="pencil__middle"></div>
+                <div class="pencil__eraser"></div>
+              </div>
+              <div class="line"></div>
+              <h2>Page Loading...Please Wait</h2>
+            </div>
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== INICIO ====================-->
