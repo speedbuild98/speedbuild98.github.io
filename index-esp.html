@@ -14,19 +14,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <!--==================== LOADER ====================-->
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
-            <script>document.onreadystatechange = function() {
+        <script>
+            document.onreadystatechange = function(){
                 if (document.readyState !== "complete") {
                     document.querySelector(
                       "body").style.visibility = "hidden";
                     document.querySelector(
-                      "#spinner").style.visibility = "visible";
+                      ".spinner").style.visibility = "visible";
                 } else {
                     document.querySelector(
-                      "#spinner").style.display = "none";
+                      ".spinner").style.display = "none";
                     document.querySelector(
                       "body").style.visibility = "visible";
                 }
-            };</script>
+            }</script>
         <!--==================== TITLE ====================-->
         <title>Gallardo Portfolio</title>
     </head>
@@ -82,15 +83,7 @@
         </header>
 
         <!--==================== LOADER ====================-->
-        <div id="spinner" class="loader">
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-            <div class="loader-square"></div>
-        </div>
+        <div class="pulse spinner"></div>
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== INICIO ====================-->
