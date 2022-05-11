@@ -424,11 +424,11 @@ img {
   color:var(--first-color)
 }
 
-.button--link:hover{
-
-  background-color: transparent;
-  color: var(--first-color-alt);
+.splide__arrow{
+  display:none;
 }
+
+
 /*==================== ACERCA DE MÍ ====================*/
 .about__img{
   width: 200px;
