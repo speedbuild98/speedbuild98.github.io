@@ -1039,8 +1039,9 @@ width: 80%;
  
  .loader-square {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50;
+  left: 50;
+  transform: translate(-50%, 0);
   width: 28px;
   height: 28px;
   margin: 2px;
