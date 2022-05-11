@@ -306,6 +306,7 @@ img {
 
 .home__blob-img{
   width: 170px;
+  filter: saturate(0%)
 }
 
 .home__data{
@@ -328,10 +329,13 @@ img {
   white-space: nowrap;
   border-right: 4px solid var(--first-color);
   width: 18ch;
-
-  animation:typing 2s steps(18), blink .5s
+  animation:nada 5s, typing 2s steps(25), blink .5s
   infinite step-end alternate;
   overflow:hidden;  
+}
+@keyframes nada {
+  0% {color:red}
+  10% {text-decoration:underline;}
 }
 @keyframes typing {
   from {width: 0}
@@ -347,11 +351,12 @@ img {
 
 .home__scroll{
   display:none;
+  margin: 0 auto;
 }
 
 .home__scroll-button{
   color: var(--first-color);
-  transition: .3s;
+  filter: drop-shadow(-2px 2px 5px var(--first-color));
 }
 
 .home__scroll-button:hover{
@@ -430,8 +435,9 @@ img {
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
-  filter: drop-shadow(-2px 2px 2px var(--first-color));
-  animation:anim 25s infinite;
+  filter: drop-shadow(2px 2px 10px var(--first-color));
+  animation:blob 25s infinite;
+  border:2px solid var(--first-color);
 }
 
 .about__description{
@@ -1134,6 +1140,7 @@ width: 80%;
   }
   .home__container{
     row-gap: 5rem;
+    min-height:100vh;
   }
   .home__content{
     padding-top: 5.5rem;
@@ -1240,9 +1247,9 @@ width: 80%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/*==================== Ilumunación de botones ====================*/
+/*==================== Ilumunación y animación de botones ====================*/
 .button{
-  filter: drop-shadow(-2px 2px 15px var(--first-color));
+  filter: drop-shadow(-2px 2px 10px var(--first-color));
 }
 
 .button{
@@ -1277,7 +1284,7 @@ width: 80%;
     filter: drop-shadow(-2px 2px 5px var(--first-color));
 }
 50% {
-    filter: drop-shadow(-2px 2px 20px var(--first-color));
+    filter: drop-shadow(-2px 2px 30px var(--first-color));
 }
 100% {
     filter: drop-shadow(-2px 2px 5px var(--first-color));
@@ -1286,6 +1293,7 @@ width: 80%;
 /*==================== Animación de Leonel ====================*/
 .animate-charcter
 {
+   filter: drop-shadow(2px 2px 0px #fff);
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
@@ -1334,7 +1342,7 @@ width: 80%;
   position: relative;
 }
 /*==================== BLOB ANIMATION ====================*/
-@keyframes anim {
+@keyframes blob {
 	0%,
 	100% {
 		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
@@ -1377,4 +1385,17 @@ width: 80%;
 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 	}
 }
+/*==================== Imagen blob ====================*/
 
+.home__blob{
+  animation:color 6s;
+}
+
+.home__blob-img:hover {
+  filter: saturate(100%);
+}
+
+@keyframes color{
+  0% {filter: saturate(0%);}
+  100% {filter: saturate(100%);}
+}
