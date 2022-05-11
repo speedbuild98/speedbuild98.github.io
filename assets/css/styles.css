@@ -302,8 +302,6 @@ img {
 .home__blob{
   width: 200px;
   fill: var(--first-color);
-  filter: drop-shadow(-2px 2px 15px var(--first-color));
-  animation: brillar 5s infinite;
 }
 
 .home__blob-img{
@@ -432,7 +430,8 @@ img {
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
-  filter: drop-shadow(-2px 2px 15px var(--first-color));
+  filter: drop-shadow(-2px 2px 2px var(--first-color));
+  animation:anim 25s infinite;
 }
 
 .about__description{
@@ -1334,4 +1333,47 @@ width: 80%;
 .section__title {
   position: relative;
 }
-/*==================== DAME UNA OPORTUNIDAD DE SEGUIR APRENDIENDO ====================*/
+/*==================== BLOB ANIMATION ====================*/
+@keyframes anim {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+		box-shadow:	0 -2vmin 7vmin #0088cc inset;
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
+}
