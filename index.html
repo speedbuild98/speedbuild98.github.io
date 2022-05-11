@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/splide-4.0.1/dist/css/splide.min.css">
         <!--==================== LOADER ====================-->
+        <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
             <script>document.onreadystatechange = function() {
                 if (document.readyState !== "complete") {
                     document.querySelector(
@@ -32,7 +33,7 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a target="_blank" href="https://wa.me/5492664017317" class="nav__logo">Leonel</a>
+                <a target="_blank" href="https://wa.me/5492664017317" class="nav__logo tituloNav">Leonel</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -125,7 +126,7 @@
                             </svg>                            
                         </div>
                         <div class="home__data contenedor">
-                            <h1 class="home__title">¡Hello, i'm <span id="nombre">Leonel!</span></h1>
+                            <h1 class="home__title">Hello, i'm <span class="animate-charcter" id="nombre">Leonel!</span></h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
                             <p class="home__description">Soy un joven de 23 años con mucho interés en aprender a desarrollar Web [3.0]. Actualmente estoy realizando un Bootcamp para ser un Full-stack Web Developer.</p>
                             <a href="#contact" class="button button--flex">
@@ -469,6 +470,32 @@
                         </li>
                         <!--==================== PORTFOLIO 2====================-->
                         <li class="portfolio__content grid swiper-slide splide__slide">
+                            <img class="portfolio__img" src="assets/img/portfolio6.jpg" alt="portfolio1">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">TRADUCTOR GERINGOSO</h3>
+                                <p class="potafolio__description">Un pequeño traductor que convierte texto a geringoso y biceversa.<BR><STRONG>[HTML-CSS-BOOTSTRAP]</STRONG></p>
+                                <a href="https://gallardo-geringoso.netlify.app/" target="_blank" class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </li> 
+                        <!--==================== PORTFOLIO 3====================-->
+                        <li class="portfolio__content grid swiper-slide splide__slide">
+                            <img class="portfolio__img" src="assets/img/portfolio2.jpg" alt="portfolio2">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Calculadora Fitness</h3>
+                                <p class="potafolio__description">Una calculadora para obtener IMC y macronutrientes.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
+                                <a href="https://milei2023.netlify.app/liberalismo-muscular/" target="_blank" class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </li>                       
+                        <!--==================== PORTFOLIO 4====================-->
+                        <li class="portfolio__content grid swiper-slide splide__slide">
                             <img class="portfolio__img" src="assets/img/portfolio5.jpg" alt="portfolio2">
 
                             <div class="portfolio__data">
@@ -480,7 +507,7 @@
                                 </a>
                             </div>
                         </li>
-                        <!--==================== PORTFOLIO 3====================-->
+                        <!--==================== PORTFOLIO 5====================-->
                         <li class="portfolio__content grid swiper-slide splide__slide">
                             <img class="portfolio__img" src="assets/img/portfolio3.jpg" alt="portfolio3">
 
@@ -493,7 +520,7 @@
                                 </a>
                             </div>
                         </li>
-                        <!--==================== PORTFOLIO 4====================-->
+                        <!--==================== PORTFOLIO 6====================-->
                         <li class="portfolio__content grid swiper-slide splide__slide">
                             <img class="portfolio__img" src="assets/img/portfolio4.jpg" alt="portfolio3">
 
@@ -505,20 +532,7 @@
                                 <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
-                        </li>
-                        <!--==================== PORTFOLIO 5====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio2.jpg" alt="portfolio2">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Calculadora Fitness</h3>
-                                <p class="potafolio__description">Una calculadora para obtener IMC y macronutrientes.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
-                                <a href="https://milei2023.netlify.app/liberalismo-muscular/" target="_blank" class="button xd button--flex button--small portfolio__button">
-                                DEMO
-                                <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </li>                   
+                        </li>                  
                     </ul>
                      <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
