@@ -14,8 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <!--==================== LOADER ====================-->
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
-            <script>document.onreadystatechange = function() {
-                if (document.readyState !== "complete") {
+            <script>
+            document.onreadystatechange = function() {
+                if (document.readyState === "complete") {
                     document.querySelector(
                       "body").style.visibility = "hidden";
                     document.querySelector(

@@ -941,6 +941,10 @@ width: 80%;
   border-radius: .5rem;
 }
 /*========== LOADER ==========*/
+#loader{
+  position:relative;
+  margin: 0 auto;
+}
 .pencil {
   position: relative;
   width: 300px;
