@@ -1026,24 +1026,6 @@ width: 80%;
 
 
 .line {
-  @keyframes line-animation {
-    20% {
-      transform: scaleX(0);
-    }
-
-    45% {
-      transform: scaleX(0.6);
-    }
-
-    55% {
-      transform: scaleX(0.6);
-    }
-
-    100% {
-      transform: scaleX(0);
-    }
-  }
-
   position: relative;
   top: 80px;
   right: 103px;
@@ -1055,6 +1037,24 @@ width: 80%;
   transform: scaleX(0);
   transform-origin: center;
   animation: line-animation 10s infinite;
+}
+
+@keyframes line-animation {
+  20% {
+    transform: scaleX(0);
+  }
+
+  45% {
+    transform: scaleX(0.6);
+  }
+
+  55% {
+    transform: scaleX(0.6);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
 }
 
 h2 {
