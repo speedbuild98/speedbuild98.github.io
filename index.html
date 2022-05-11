@@ -15,7 +15,7 @@
         <!--==================== LOADER ====================-->
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
             <script>
-            document.onreadystatechange = function() {
+            document.onreadystatechange = setTimeoutfunction();{
                 if (document.readyState !== "complete") {
                     document.querySelector(
                       "body").style.visibility = "hidden";
@@ -27,7 +27,7 @@
                     document.querySelector(
                       "body").style.visibility = "visible";
                 }
-            };</script>
+            }2000;</script>
         <!--==================== TITLE ====================-->
         <title>Gallardo Portfolio</title>
     </head>
@@ -83,17 +83,7 @@
         </header>
 
         <!--==================== LOADER ====================-->
-        <div id="loader" class="spinner">
-            <div class="pencil">
-                <div class="pencil__ball-point"></div>
-                <div class="pencil__cap"></div>
-                <div class="pencil__cap-base"></div>
-                <div class="pencil__middle"></div>
-                <div class="pencil__eraser"></div>
-              </div>
-              <div class="linelapiz"></div>
-              <h2 id="textolapiz">Page Loading...Please Wait</h2>
-            </div>
+        <div class="pulse spinner"></div>
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== INICIO ====================-->
