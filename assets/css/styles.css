@@ -975,7 +975,7 @@ width: 80%;
   top: 16px;
   margin: auto;
   height: 3px;
-
+  filter: drop-shadow(5px 5px 1px var(--first-color));
 }
 
 
