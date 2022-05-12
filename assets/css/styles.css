@@ -1548,6 +1548,7 @@ width: 80%;
   position: relative;
   width: 90vw;
   margin-bottom: 4rem;
+  margin-top: 4rem;
   }
   .slider::before, .slider::after {
   background: linear-gradient(to right, var(--body-color) 0%, rgba(255, 255, 255, 0) 100%);
