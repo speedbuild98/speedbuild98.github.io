@@ -922,7 +922,12 @@ width: 80%;
   margin-right: var(--mb-1-5);
   color: var(--first-color-lighter);
 }
-
+.footer__social a{
+  color: red;
+}
+.footer__social a:hover{
+  color: blue;
+}
 .footer__social:hover{
   color: var(--first-color-second);
 }
@@ -1267,13 +1272,14 @@ width: 80%;
     flex-direction: row;
     column-gap: 2rem;
   }
-  .footer__socials{
+  .footer__social{
     justify-self: flex-end;
   }
   .footer__copy{
     margin-top: 4.5rem;
   }
 }
+
 
 
 /* For large devices */
