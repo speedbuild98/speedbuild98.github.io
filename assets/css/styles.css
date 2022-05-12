@@ -279,7 +279,7 @@ img {
 }
 
 .uil-moon{
-  color: #FF013C;
+  color: var(--first-color);
 }
 .uil-apps,.uil-times,.nav__logo{
   animation: colores 2s infinite;
@@ -519,6 +519,9 @@ img {
   text-decoration: none;
   color: var(--title-color);
 }
+.buttonCertificados{
+  margin:0 auto;
+}
 /*==================== ACERCA DE MÍ ====================*/
 .about__img{
   width: 200px;
@@ -677,18 +680,17 @@ width: 80%;
 }
 
 /*==================== SERVICIOS ====================*/
-.services__container{
-  gap: 1.5rem;
-  grid-template-columns:  repeat(2, 1fr);
-}
 
 .services__content{
   position: relative;
-  background-color: var(--container-color);
-  padding: 3.5rem .5rem 1.25rem 1.5rem;
   border-radius: .25rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
   transition: .3s;
+  grid-template-columns: max-content;
+  justify-content: center;
+}
+.services__content img{
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
 }
 
 .services__content:hover{
@@ -774,6 +776,13 @@ width: 80%;
   visibility: visible;
 }
 
+.acertificados{
+  text-decoration: none;
+  color: var(--body-font);
+}
+.acertificados:hover{
+  color:var(--first-color-alt);
+}
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
   overflow: initial;
@@ -1119,10 +1128,6 @@ width: 80%;
     justify-content: center;
   }
 
-  .services-content{
-    padding-right: 3.5rem;
-  }
-
   .service__modal{
     padding: 0 .5rem;
   }
@@ -1231,17 +1236,11 @@ width: 80%;
     justify-content: initial;
   }
   .services__container{
-    grid-template-columns: repeat(3, 218px);
-    justify-content: center;
+      grid-template-columns: max-content;
+      justify-content: center;
   }
   .services__icon{
     font-size: 2rem;
-  }
-  .services__content{
-    padding: 6rem 0 2rem 2.5rem;
-  }
-  .services__modal-content{
-    width: 450px;
   }
   .portfolio__img{
     width: 320px;
@@ -1295,9 +1294,7 @@ width: 80%;
   .home__social{
     transform: translateX(-6rem);
   }
-  .services__container{
-    grid-template-columns: repeat(3, 238px);
-  }
+
   .portfolio__content{
     column-gap: 5rem;
   }
@@ -1315,7 +1312,13 @@ width: 80%;
 
 .button{
   animation: brillar 8s infinite;
-  animation: wiggle 5s infinite;
+}
+#botonContacto {
+  animation: wiggle 4s infinite;
+  padding: 2px;
+}
+#botonContacto:hover{
+  color: #fff;
 }
 .xd{
   filter:none!important;
