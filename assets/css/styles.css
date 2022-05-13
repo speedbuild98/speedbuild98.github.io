@@ -1209,7 +1209,6 @@ width: 80%;
   }
   .home__container{
     row-gap: 5rem;
-    min-height:100vh;
   }
   .home__content{
     padding-top: 5.5rem;
