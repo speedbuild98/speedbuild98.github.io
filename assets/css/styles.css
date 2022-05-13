@@ -319,6 +319,7 @@ img {
 
 .home__container{
   gap:1rem;
+  min-height: 90vh;
 }
 
 .home__content{
@@ -404,6 +405,8 @@ img {
 .home__scroll{
   display:none;
   margin: 0 auto;
+  padding:0px;
+  height:60px;
 }
 
 .home__scroll-button{
@@ -1115,6 +1118,9 @@ width: 80%;
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
+  .home__scroll{
+    display:block;
+  }
   .home__blob{
     width: 180px;
   }
@@ -1133,7 +1139,7 @@ width: 80%;
   
   .project-img{
     width: 200px;
-  }
+  } 
 }
 
 /* For medium devices */
@@ -1148,7 +1154,6 @@ width: 80%;
     order: 1;
     justify-self: center;
   }
-
   .about__container,
   .skills__container,
   .portfolio__content,
@@ -1215,9 +1220,6 @@ width: 80%;
   }
   .home__scroll{
     display: block;
-  }
-  .home__scroll-button{
-    margin-left: 3rem;
   }
   .about__container{
     column-gap: 5rem;
@@ -1412,7 +1414,7 @@ width: 80%;
   inset: 0 0 0 0;
   background: var(--first-color);
   z-index: -1;
-  transition: transform 1s ease-in;
+  transition: transform .2s ease-in-out;
 }
 
 .section__title {

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/splide-4.0.1/dist/css/splide.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--==================== LOADER ====================-->
         <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
             <script>
@@ -105,7 +106,7 @@
                         </div>
                         
 
-                        <div class="home__img"><a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/">
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="home__img"><a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/">
                             <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -125,7 +126,7 @@
                         </a>                                                         
                         </div>
                         <div class="home__data contenedor">
-                            <h1 class="home__title">Hello, i'm <span class="animate-charcter" id="nombre">Leonel!</span></h1>
+                            <h1 data-aos="fade-up" data-aos-delay="50″ class="home__title">Hello, i'm <span class="animate-charcter" id="nombre">Leonel!</span></h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
                             <p class="home__description">I am a 23-year-old with a lot of interest in learning to develop Web [3.0]. I am currently doing a Bootcamp to be a <strong>Full-stack web developer</strong>.</p>
                             <a href="#portfolio" id="botonContacto" class="button button--flex">
@@ -145,7 +146,7 @@
 
             <!--==================== ACERCA DE MÍ ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About me</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="-200" class="section__title">About me</h2>
                 <span class="section__subtitle">Introduction</span>
 
                 <div class="about__container container grid">
@@ -165,7 +166,7 @@
 
             <!--==================== HABILIDADES ====================-->
             <section class="skills section" id="skills">
-                <h2 class="section__title">SKILLS</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="50" class="section__title">SKILLS</h2>
                 <div class="slider">
                     <div class="slide-track">
                     <div class="slide">
@@ -377,7 +378,7 @@
             </section>
             <!--==================== SERVICIOS ====================-->
             <section  id="certificates" class="services section" id="services">
-                <h2 class="section__title">Certificates</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="50" class="section__title">Certificates</h2>
                 <span class="section__subtitle">what was I learning?</span>
 
                 <div class="services__container container grid">
@@ -438,7 +439,7 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section splide" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="50" class="section__title">Portfolio</h2>
                 <span class="section__subtitle">My recent work</span>
 
                 <div class="portfolio__container container swiper-container splide__track">
@@ -546,7 +547,7 @@
 
             <!--==================== CONTACTO ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section__title">Contact me</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000"  data-aos-delay="50" class="section__title">Contact me</h2>
                 <span class="section__subtitle">Get in touch</span>
 
                 <div class="contact__container container grid">
@@ -660,8 +661,9 @@
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
         <script src="assets/splide-4.0.1/dist/js/splide.min.js"></script>   
-        <script>
-            new Splide( '.splide' ).mount();
-          </script>     
+        <script>new Splide( '.splide' ).mount();</script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
     </body>
 </html>
