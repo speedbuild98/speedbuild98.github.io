@@ -705,7 +705,7 @@ width: 80%;
   box-shadow: 0 2px 4px rgba(0,0,0,.15);
 }
 
-.services__content:hover{
+.services__content img:hover{
   box-shadow: 0 4px 8px;
 }
 
