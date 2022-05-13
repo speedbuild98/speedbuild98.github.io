@@ -941,7 +941,7 @@ width: 80%;
   color: var(--first-color-lighter);
 }
 .footer__social a{
-  color: red;
+  color: #fff;
 }
 .footer__social a:hover{
   color: blue;
