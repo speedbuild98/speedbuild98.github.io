@@ -702,12 +702,9 @@ width: 80%;
 }
 .services__content img{
   border-radius: .5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  box-shadow: 0px 4px 10px;
 }
 
-.services__content img:hover{
-  box-shadow: 0 4px 8px;
-}
 
 .services-icon{
   display: block;
