@@ -1112,9 +1112,6 @@ width: 80%;
   .nav__list{
     column-gap: 0;
   }
-  .home__container{
-    min-height:100vh;
-  }
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
