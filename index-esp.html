@@ -40,33 +40,33 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home
+                            <a href="#home" class="nav__link active-link">Inicio
                                 <i class="uil uil-estate .nav__icon"></i> 
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user .nav__icon"></i> About me                                
+                                <i class="uil uil-user .nav__icon"></i>Acerca de mí                                
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt .nav__icon"></i> Skills                                
+                                <i class="uil uil-file-alt .nav__icon"></i>Habilidades                               
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#certificates" class="nav__link">
-                                <i class="uil uil-briefcase-alt .nav__icon"></i> Certificates                               
+                                <i class="uil uil-briefcase-alt .nav__icon"></i>Certificados                               
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery .nav__icon"></i> Portfolio                                
+                                <i class="uil uil-scenery .nav__icon"></i>Portfolio                                
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message .nav__icon"></i> Contact me                               
+                                <i class="uil uil-message .nav__icon"></i>Contactame                               
                             </a>
                         </li>
                     </ul>
@@ -579,32 +579,30 @@
                             </div>
                         </div>
                     </div>
-
-                    <form action="" class="contact_form grid">
+                    <form action="https://formspree.io/f/xgedrlee"
+                    method="POST" class="contact_form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nombre</label>
-                                <input type="text" class="contact__input">
+                                <input placeholder="Tu nombre" type="name" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="" class="contact__label">Email</label><br>
+                                <input placeholder="Email" id="inputMail" type="email" name="email">
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">
                                 Asunto</label>
-                            <input type="text" class="contact__input">
+                            <input placeholder="¿En qué te puedo ayudar?" type="subject" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label class="contact__label" for="" >Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label class="contact__label">Mensaje</label>
+                            <textarea placeholder="Coloca tu teléfono y tu mensaje por favor" name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
-                                Enviar
-                                <i class="uil uil-message button__icon"></i>
+                            <button id="botonMail" class="button button--flex" type="submit">Send<i class="uil uil-message button__icon"></i></button>
                             </a>
                         </div>
                     </form>
