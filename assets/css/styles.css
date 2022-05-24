@@ -110,6 +110,10 @@ html {
     user-select: none;
 }
 
+body{
+  cursor:url(/assets/img/cursorxd.gif), auto;
+}
+
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
