@@ -351,7 +351,7 @@ img {
 }
 
 .home__blob{
-  cursor: pointer;
+  cursor:help;
   width: 200px;
   fill: var(--first-color);
   filter: drop-shadow(-2px 2px 20px var(--first-color));
@@ -434,6 +434,64 @@ img {
   font-size: 1.25rem;
 }
 
+.flotante{
+  position:absolute;
+  z-index: 100;
+  top:0;
+  left:0;
+  width: 4rem;
+  animation:float 6s ease-in-out infinite;
+  filter:drop-shadow(0 0px 10px #fff) saturate(10%);
+}
+.flotante:hover{
+  filter:saturate(100%);
+}
+#floatReact{
+  margin-top: 10%;
+  animation-delay: 1s;
+}
+#floatGithub{
+  margin-top: 35%;
+  margin-left: 80%;
+  animation-delay: 1.7s;
+}
+#floatJs{
+  margin-top: 50%;
+  margin-left: -10%;
+  animation-delay: 0.1s;
+}
+#floatHtml{
+  margin-top: 5%;
+  margin-left: 50%;
+  animation-delay: 3s;
+}
+#floatCss{
+  margin-top: 80%;
+  margin-left: 30%;
+  animation-delay: 2.2s;
+}
+#floatBootstrap{
+  margin-top: 50%;
+  margin-left: 55%;
+  animation-delay: .5s;
+}
+#floatTailwind{
+  margin-top: 40%;
+  margin-left: 15%;
+  animation-delay: .8s;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 /*==================== BOTONES ====================*/
 
