@@ -1364,6 +1364,10 @@ width: 80%;
   filter:none!important;
   animation: none;
 }
+#no-demo{
+  text-decoration: dashed;
+  cursor:not-allowed;
+}
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
