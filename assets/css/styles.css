@@ -670,43 +670,43 @@ img {
 }
 
 .skills__html{
-  width:90%;
+  width:100%;
 }
 
 .skills__css{
-  width: 80%;
+  width:100%;
 }
 
 .skills__js{
-  width: 50%;
+  width:100%;
 }
 .skills__github{
-  width: 70%;
+  width:100%;
 }
 
 .skills__photoshop{
-  width: 80%;
+  width:100%;
 }
 .skills__illus{
-  width: 70%;
+  width:100%;
 }
 .skills__autocad{
-  width: 90%;
+  width:100%;
 }
 .skills__sketchup{
-width: 80%;
+width:100%;
 }
 .skills__office{
-  width: 80%;
+  width:100%;
 }
 .skills__cctv{
-  width: 70%;
+  width:100%;
 }
 .skills__alarmas{
-  width: 50%;
+  width:100%;
 }
 .skills__redes{
-  width: 70%;
+  width:100%;
 }
 .skills__close .skills__list{
   height: 0;
