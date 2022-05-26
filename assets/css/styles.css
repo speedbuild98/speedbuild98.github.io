@@ -436,7 +436,7 @@ img {
   z-index: 100;
   top:0;
   left:0;
-  width: 2rem;
+  width: 4rem;
   animation:float 6s ease-in-out infinite;
 }
 
