@@ -461,7 +461,9 @@ img {
 	}
 }
 
-
+#casita{
+  flex-direction: column-reverse;
+}
 /*==================== BOTONES ====================*/
 
 .button{
@@ -850,6 +852,18 @@ width:100%;
 
 .portfolio__button:hover .button__icon{
   transform: translateX(.25rem);
+}
+
+.repo{
+  background-color: var(--first-color);
+  color: white;
+  padding: 6px 10px 6px 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.repo:hover{
+  background-color: var(--first-color-lighter);
 }
 /*==================== PROYECTO EN MENTE ====================*/
 .project{
