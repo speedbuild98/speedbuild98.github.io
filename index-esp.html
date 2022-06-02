@@ -1,882 +1,953 @@
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
+<html lang="es">
+
+<head>
     <!--==================== SI ESTÁS LEYENDO ESTO, DAME UNA OPORTUNIDAD DE CRECER POR FAVOR. ====================-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#0088CC" />
-        <!--==================== Sé que no puse metatags, es mi portfolio nomás. ====================-->
-        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/splide-4.0.1/dist/css/splide.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <!--==================== LOADER ====================-->
-        <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
-        <script>
-            document.onreadystatechange = function(){
-                if (document.readyState !== "complete") {
-                    document.querySelector(
-                      "body").style.visibility = "hidden";
-                    document.querySelector(
-                      ".spinner").style.visibility = "visible";
-                } else {
-                    document.querySelector(
-                      ".spinner").style.display = "none";
-                    document.querySelector(
-                      "body").style.visibility = "visible";
-                }
-            }</script>
-        <!--==================== TITLE ====================-->
-        <title>Gallardo Portfolio</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/" class="nav__logo tituloNav">Leonel</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0088CC" />
+    <!--==================== Sé que no puse metatags, es mi portfolio nomás. ====================-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/splide-4.0.1/dist/css/splide.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--==================== LOADER ====================-->
+    <!--Ya sé que no debería poner el script acá, no me juzgues jajajaj-->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    ".spinner").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    ".spinner").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        }</script>
+    <!--==================== TITLE ====================-->
+    <title>Gallardo Portfolio</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a id="casita" href="#home" class="nav__link active-link">Inicio
-                                <i class="uil uil-estate .nav__icon"></i> 
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user .nav__icon"></i>Acerca de mí                                
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt .nav__icon"></i>Habilidades                               
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class="uil uil-briefcase-alt .nav__icon"></i>Certificados                               
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery .nav__icon"></i>Portfolio                                
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message .nav__icon"></i>Contactame                               
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/"
+                class="nav__logo tituloNav">Leonel</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a id="casita" href="#home" class="nav__link active-link">Inicio
+                            <i class="uil uil-estate .nav__icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user .nav__icon"></i>Acerca de mí
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt .nav__icon"></i>Habilidades
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="uil uil-briefcase-alt .nav__icon"></i>Certificados
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery .nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message .nav__icon"></i>Contactame
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__btns">
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+    <!--==================== LOADER ====================-->
+    <div class="pulse spinner"></div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== INICIO ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/lautagallardogg/" target="_blank"
+                            class="home__social-icon linkedinxd">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/speedbuild98" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://cafecito.app/speedbuild" target="_blank" class="home__social-icon">
+                            <i class="uil uil-coffee"></i>
+                        </a>
+                        <button id="botonIdioma"><a href="/index.html">ENGLISH</a></button>
                     </div>
-                </div>
-            </nav>            
-        </header>
 
-        <!--==================== LOADER ====================-->
-        <div class="pulse spinner"></div>
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== INICIO ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/lautagallardogg/" target="_blank" class="home__social-icon linkedinxd">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/speedbuild98"  target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                            <a href="https://cafecito.app/speedbuild"  target="_blank" class="home__social-icon">
-                                <i class="uil uil-coffee"></i>
-                            </a>
-                            <button id="botonIdioma"><a href="/index.html">ENGLISH</a></button>
-                        </div>
-
-                        <div class="home__img"><a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="home__img"><a target="_blank" href="https://www.linkedin.com/in/lautagallardogg/">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                                 </mask>
                                 <g mask="url(#mask0)">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img matrix" x="" y="" xlink:href="assets/img/perfil2.gif"/>
-                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                    <image class="home__blob-img matrix" x="" y=""
+                                        xlink:href="assets/img/perfil2.gif" />
+                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png" />
                                 </g>
                             </svg>
-                        </a>                                                          
-                        </div>
-                        <div class="home__data contenedor">
-                            <h1 class="home__title">¡Hola, soy <span class="animate-charcter" id="nombre">Leonel!</span></h1>
-                            <h3 class="home__subtitle">Frontend developer</h3>
-                            <p class="home__description">Soy un joven de 24 años con mucho interés en aprender a desarollar <strong>Web [3.0] y seguridad informática</strong>. Actualmente estoy haciendo un bootcamp para ser <strong>Full-stack web developer</strong>.</p>
-                            <a href="#portfolio" id="botonContacto" class="button button--flex">
-                                PORTFOLIO<i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
+                        </a>
                     </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="gradient-border home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Ir abajo</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    <div class="home__data contenedor">
+                        <h1 class="home__title">¡Hola, soy <span class="animate-charcter" id="nombre">Leonel!</span>
+                        </h1>
+                        <h3 class="home__subtitle">Frontend developer</h3>
+                        <p class="home__description">Soy un joven de 24 años con mucho interés en aprender a desarollar
+                            <strong>Web [3.0] y seguridad informática</strong>. Actualmente estoy haciendo un bootcamp
+                            para ser <strong>Full-stack web developer</strong>.</p>
+                        <a href="#portfolio" id="botonContacto" class="button button--flex">
+                            PORTFOLIO<i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
-            </section>
+                <div class="home__scroll">
+                    <a href="#about" class="gradient-border home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Ir abajo</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== ACERCA DE MÍ ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">Acerca de mí</h2>
-                <span class="section__subtitle">Introducción</span>
+        <!--==================== ACERCA DE MÍ ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">Acerca de mí</h2>
+            <span class="section__subtitle">Introducción</span>
 
-                <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+            <div class="about__container container grid">
+                <img src="assets/img/about.png" alt="" class="about__img">
 
-                    <div class="about__data">
-                        <p class="about__description">Soy una persona ambiciosa, proactiva, motivada a la que le gusta trabajar en equipo. Me siento un buscador de soluciones optimizadas. Quiero poder trabajar en una empresa donde pueda poner a prueba mis conocimientos y habilidades, con el fin de crear soluciones a los problemas que se presenten.</p>
+                <div class="about__data">
+                    <p class="about__description">Soy una persona ambiciosa, proactiva, motivada a la que le gusta
+                        trabajar en equipo. Me siento un buscador de soluciones optimizadas. Quiero poder trabajar en
+                        una empresa donde pueda poner a prueba mis conocimientos y habilidades, con el fin de crear
+                        soluciones a los problemas que se presenten.</p>
 
-                        <div class="about__buttons">
-                            <a download="" href="assets/pdf/material-resume.pdf" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button-icon"></i>
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/material-resume.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== HABILIDADES ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Habilidades</h2>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/html.png" height="100" width="250" alt="HTML" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/css.png" height="100" width="250" alt="CSS" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/js.png" height="100" width="250" alt="JS" />
+                    </div>
+                    <div class="slide">
+                        <img type="img/gif" class="mario" src="/assets/img/icons/acf3abb6da430dd78cc99f925bb52d49.gif"
+                            height="" width="" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/tailwind.png" height="100" width="250"
+                            alt="Tailwind">
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/bootstrap.png" height="100" width="250"
+                            alt="BOOTSTRAP" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/sass.png" height="100" width="250" alt="SASS" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/react.png" height="100" width="250" alt="REACT" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/github.png" height="100" width="250"
+                            alt="GITHUB" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/illustrator.png" height="100" width="250"
+                            alt="ILLUSTRATOR" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/photoshop.png" height="100" width="250"
+                            alt="PHOTOSHOP" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/cad-file-format-symbol.png" height="100"
+                            width="250" alt="AUTOCAD" />
+                    </div>
+                    <div class="slide">
+                        <img class="misSkills" src="/assets/img/icons/sketchup.png" height="100" width="250"
+                            alt="SKETCHUP" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__container container grid">
+                <!--==================== SKILLS 1====================-->
+                <div class="skills__content skills__open accordion">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Frontend developer</h1>
+                            <span class="skills__subtitle">Diseño web</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__github"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__github"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Tailwind</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__github"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">ReactJS</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__github"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SKILLS 2====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-illustration skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Diseño gráfico</h1>
+                            <span class="skills__subtitle">Herramientas de diseño</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Photoshop</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__photoshop"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Illustrator</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__illus"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">AutoCad</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__autocad"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SketchUp</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sketchup"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SKILLS 3====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-rss skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Otros</h1>
+                            <span class="skills__subtitle">¿Qué más puedo hacer?</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Microsoft Office</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__office"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Cámaras de seguridad</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__cctv"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Alarmas</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__alarmas"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Redes</h3>
+
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__redes"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== CERTIFICACIONES ====================-->
+        <section id="certificates" class="services section" id="services">
+            <h2 class="section__title">Certificados</h2>
+            <span class="section__subtitle">¿Qué estuve aprendiendo?</span>
+
+            <div class="services__container container grid">
+                <!--==================== SERVICES 1====================-->
+                <div class="services__content">
+                    <div>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates1.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates2.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates3.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates4.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates5.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates6.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates7.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="assets/img/certificates8.png" style="width:100%">
+                            </div>
+
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">CERTIFICADOS</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://freecodecamp.org/certification/Speedbuild98/responsive-web-design">
+                                        <p><strong>Diseño Web Responsivo </strong><br>FREECODECAMP</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://freecodecamp.org/certification/Speedbuild98/javascript-algorithms-and-data-structures">
+                                        <p><strong>JavaScript Algoritmos y Estructuras de Datos</strong><br>FREECODECAMP
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank" href="https://www.efset.org/cert/HvTuSr">
+                                        <p><strong>Test de Inglés Standard [C1 Advanced]</strong><br>EF ENGLISH TEST</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://www.hackerrank.com/certificates/cd66948c6577">
+                                        <p><strong>CSS</strong><br>HACKERONE</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://www.udemy.com/certificate/UC-3f2ce22e-93eb-4b69-a0ee-c593708465bc/">
+                                        <p><strong>Python: De 0 a reconocimiento facial</strong><br>UDEMY</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://crehana.com/diplomas/560de60d">
+                                        <p><strong>Desarrollo web desde 0</strong><br>CREHANA</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://www.linkedin.com/learning/certificates/0841f50a68acd0e3d4c8396387a9f0d04bc7ab6e75760623f872d98b47a1b40a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8%2FP%2FJoVOQpGdVv%2F4EGgWGQ%3D%3D">
+                                        <p><strong>Scrum</strong><br>LINKEDIN</p>
+                                    </a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <a class="acertificados" target="_blank"
+                                        href="https://www.linkedin.com/learning/certificates/c7486366c2ee4fc645ee0745d05c44feefbc5b77f0325af4fec579a8dea6173d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8%2FP%2FJoVOQpGdVv%2F4EGgWGQ%3D%3D">
+                                        <p><strong>CSS</strong><br>LINKEDIN</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span id="botonContacto"
+                    class="button button--flex button--small button--link services__button buttonCertificados">
+                    VER MÁS
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </span>
+            </div>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section splide" id="portfolio">
+            <h2 class="section__title">Portafolio</h2>
+            <span class="section__subtitle">Mi trabajo reciente</span>
+
+            <div class="portfolio__container container swiper-container splide__track">
+                <ul class="swiper-wrapper splide__list">
+                    <!--==================== PORTFOLIO 23====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio23.jpg" alt="portfolio23">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Generador de contraseñas</h3>
+                            <p class="potafolio__description">Un generador de contraseñas aleatorias que permite elegir
+                                la longitud y tipo de caracteres.<BR><STRONG>[HTML-CS-JS-Bootstrap]</STRONG></p>
+                            <a href="https://gallardo-password.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/generador-de-contrase-as" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </li>
+                    <!--==================== PORTFOLIO 22====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio22.jpg" alt="portfolio22">
 
-            <!--==================== HABILIDADES ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Habilidades</h2>
-                <div class="slider">
-                    <div class="slide-track">
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/html.png" height="100" width="250" alt="HTML" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/css.png" height="100" width="250" alt="CSS" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/js.png" height="100" width="250" alt="JS" />
-                    </div>
-                    <div class="slide">
-                    <img type="img/gif" class="mario" src="/assets/img/icons/acf3abb6da430dd78cc99f925bb52d49.gif" height="" width="" alt="" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/tailwind.png" height="100" width="250" alt="Tailwind">
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/bootstrap.png" height="100" width="250" alt="BOOTSTRAP" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/sass.png" height="100" width="250" alt="SASS" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/react.png" height="100" width="250" alt="REACT" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/github.png" height="100" width="250" alt="GITHUB" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/illustrator.png" height="100" width="250" alt="ILLUSTRATOR" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/photoshop.png" height="100" width="250" alt="PHOTOSHOP" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/cad-file-format-symbol.png" height="100" width="250" alt="AUTOCAD" />
-                    </div>
-                    <div class="slide">
-                    <img class="misSkills" src="/assets/img/icons/sketchup.png" height="100" width="250" alt="SKETCHUP" />
-                    </div>
-                    </div>
-                    </div>
-
-                <div class="skills__container container grid">
-                    <!--==================== SKILLS 1====================-->
-                            <div class="skills__content skills__open accordion">
-                                <div class="skills__header">
-                                    <i class="uil uil-brackets-curly skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Frontend developer</h1>
-                                        <span class="skills__subtitle">Diseño web</span>
-                                    </div>
-
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Git</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__github"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__github"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Tailwind</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__github"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">ReactJS</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__github"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                    <!--==================== SKILLS 2====================-->
-                            <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-illustration skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__titles">Diseño gráfico</h1>
-                                        <span class="skills__subtitle">Herramientas de diseño</span>
-                                    </div>
-
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Photoshop</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__photoshop"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Illustrator</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__illus"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">AutoCad</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__autocad"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">SketchUp</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__sketchup"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                   <!--==================== SKILLS 3====================-->
-                            <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-rss skills__icon"></i>
-        
-                                    <div>
-                                        <h1 class="skills__titles">Otros</h1>
-                                        <span class="skills__subtitle">¿Qué más puedo hacer?</span>
-                                    </div>
-        
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-        
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Microsoft Office</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__office"></span>
-                                    </div>
-                                </div>
-        
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Cámaras de seguridad</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__cctv"></span>
-                                    </div>
-                                </div>
-        
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Alarmas</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__alarmas"></span>
-                                    </div>
-                                </div>
-        
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Redes</h3>
-                                    
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__redes"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                </div>
-            </section>
-             <!--==================== CERTIFICACIONES ====================-->
-             <section  id="certificates" class="services section" id="services">
-                <h2 class="section__title">Certificados</h2>
-                <span class="section__subtitle">¿Qué estuve aprendiendo?</span>
-
-                <div class="services__container container grid">
-                    <!--==================== SERVICES 1====================-->
-                    <div class="services__content">
-                        <div>
-                                <div class="slideshow-container">
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates1.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates2.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates3.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates4.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates5.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates6.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates7.png" style="width:100%">
-                                </div>
-
-                                <div class="mySlides fade">
-                                <img src="assets/img/certificates8.png" style="width:100%">
-                                </div>
-
-                                </div>
-                                <br>
-                                <div style="text-align:center">
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span>
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span>  
-                                    <span class="dot"></span>
-                                    <span class="dot"></span> 
-                                </div>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Generador de consejos</h3>
+                            <p class="potafolio__description">Una pequeña caja de consejos que consume una API con Fetch
+                                de
+                                javascript.<BR><STRONG>[HTML-CS-JS]</STRONG></p>
+                            <a href="https://gallardo-advice-generator-app.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/Advice-generator-app" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
                         </div>
-                        
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">CERTIFICADOS</h4>
-                                <i class="uil uil-times services__modal-close"></i>
+                    </li>
+                    <!--==================== PORTFOLIO 20====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio21.jpg" alt="portfolio21">
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://freecodecamp.org/certification/Speedbuild98/responsive-web-design"><p><strong>Diseño Web Responsivo </strong><br>FREECODECAMP</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://freecodecamp.org/certification/Speedbuild98/javascript-algorithms-and-data-structures"><p><strong>JavaScript Algoritmos y Estructuras de Datos</strong><br>FREECODECAMP</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://www.efset.org/cert/HvTuSr"><p><strong>Test de Inglés Standard [C1 Advanced]</strong><br>EF ENGLISH TEST</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://www.hackerrank.com/certificates/cd66948c6577"><p><strong>CSS</strong><br>HACKERONE</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://www.udemy.com/certificate/UC-3f2ce22e-93eb-4b69-a0ee-c593708465bc/"><p><strong>Python: De 0 a reconocimiento facial</strong><br>UDEMY</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://crehana.com/diplomas/560de60d"><p><strong>Desarrollo web desde 0</strong><br>CREHANA</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://www.linkedin.com/learning/certificates/0841f50a68acd0e3d4c8396387a9f0d04bc7ab6e75760623f872d98b47a1b40a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8%2FP%2FJoVOQpGdVv%2F4EGgWGQ%3D%3D"><p><strong>Scrum</strong><br>LINKEDIN</p></a>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <a class="acertificados" target="_blank" href="https://www.linkedin.com/learning/certificates/c7486366c2ee4fc645ee0745d05c44feefbc5b77f0325af4fec579a8dea6173d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B8%2FP%2FJoVOQpGdVv%2F4EGgWGQ%3D%3D"><p><strong>CSS</strong><br>LINKEDIN</p></a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Proyecto Matteo</h3>
+                            <p class="potafolio__description">En este proyecto se realiza el Monitoreo Automático del
+                                Tiempo de
+                                la Troposfera en Escuelas y Organismos. En homenaje al estudiante científico MATTEO
+                                Ravagli
+                                Cáceres, estudiante del Instituto Dante Alighieri de Villa Carlos
+                                Paz.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a id="no-demo" href="" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/PROYECTO-MATTEO" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
                         </div>
-                    </div>  
-                    <span id="botonContacto" class="button button--flex button--small button--link services__button buttonCertificados">
-                        VER MÁS
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>                         
-                </div>
-            </section>
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section splide" id="portfolio">
-                <h2 class="section__title">Portafolio</h2>
-                <span class="section__subtitle">Mi trabajo reciente</span>
-            
-                <div class="portfolio__container container swiper-container splide__track">
-                    <ul class="swiper-wrapper splide__list">
-                        <!--==================== PORTFOLIO 23====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio23.jpg" alt="portfolio23">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Generador de contraseñas</h3>
-                                <p class="potafolio__description">Un generador de contraseñas aleatorias que permite elegir la longitud y tipo de caracteres.<BR><STRONG>[HTML-CS-JS-Bootstrap]</STRONG></p>
-                                <a href="https://gallardo-password.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/generador-de-contrase-as"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 22====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio22.jpg" alt="portfolio22">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Generador de consejos</h3>
-                                <p class="potafolio__description">Una pequeña caja de consejos que consume una API con Fetch de
-                                    javascript.<BR><STRONG>[HTML-CS-JS]</STRONG></p>
-                                <a href="https://gallardo-advice-generator-app.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/Advice-generator-app"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 20====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio21.jpg" alt="portfolio21">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Proyecto Matteo</h3>
-                                <p class="potafolio__description">En este proyecto se realiza el Monitoreo Automático del Tiempo de
-                                    la Troposfera en Escuelas y Organismos. En homenaje al estudiante científico MATTEO Ravagli
-                                    Cáceres, estudiante del Instituto Dante Alighieri de Villa Carlos
-                                    Paz.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a id="no-demo" href="" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/PROYECTO-MATTEO"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 15====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio15.jpg" alt="portfolio15">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Rick and Morty APP</h3>
-                                <p class="potafolio__description">Una pequeña web que muestra todos los personajes de la
-                                    serie.<BR><STRONG>[HTML-CSS-Bootstrap-React.js]</STRONG></p>
-                                <a href="https://gallardo-rickandmortyapp.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/Rick-and-Morty-App"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 14====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio14.jpg" alt="portfolio14">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Weather APP</h3>
-                                <p class="potafolio__description">Una aplicación que te muesta el clima de la ciudad que
-                                    busques.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
-                                <a href="https://gallardo-clima.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/App-clima"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 13====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio13.jpg" alt="portfolio13">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Contador de clics</h3>
-                                <p class="potafolio__description">Una app simple que cuenta los clicks, hecha con
-                                    React.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
-                                <a href="https://gallardo-contador-de-clics.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/contador-de-clics"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 12====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio12.jpg" alt="portfolio12">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Landing page</h3>
-                                <p class="potafolio__description">Una web simple hecha con
-                                    Tailwind.<BR><STRONG>[HTML-CSS-JS-PHP-Tailwind]</STRONG></p>
-                                <a href="https://gallardo-proima.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/PROIMA-WEB"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 7====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio8.jpg" alt="portfolio3">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Portfolio</h3>
-                                <p class="potafolio__description">Estás acá.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
-                                <a href="https://gallardo-pomodoro.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/speedbuild98.github.io"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 4====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio2.jpg" alt="portfolio2">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Fitness Calculator</h3>
-                                <p class="potafolio__description">Una web para calcular IMC y
-                                    macronutrientes.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
-                                <a href="https://gallardo-fit.netlify.app/fit/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/LIBERALISMO-MUSCULAR"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 1====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio1.jpg" alt="portfolio1">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Web Responsive simple</h3>
-                                <p class="potafolio__description">Una página web simple que se adapta a cualquier
-                                    dispositivo.<BR><STRONG>[HTML-CSS-BOOTSTRAP]</STRONG></p>
-                                <a href="https://merlowebs-gallardo.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/merlowebs"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 3====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio7.jpg" alt="portfolio7">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">PDF-GENERATOR</h3>
-                                <p class="potafolio__description">Una web que convierte un formulario en .PDF para evitar el gasto
-                                    de papel.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
-                                <a href="https://gallardo-pdf.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/PDF-Generator"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 5====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio5.jpg" alt="portfolio2">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">To Do List</h3>
-                                <p class="potafolio__description">Una web simple para anotar
-                                    tareas.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
-                                <a href="https://gallardo-todolist.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/toDoList"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 5====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio3.jpg" alt="portfolio3">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Calculator JS</h3>
-                                <p class="potafolio__description">Una pequeña calculadora
-                                    funcional.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
-                                <a href="https://gallardo-calculadora.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/calculadora-js"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 6====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio4.jpg" alt="portfolio3">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">POMODORO</h3>
-                                <p class="potafolio__description">Un reloj pomodoro para tiempos de concentración y
-                                    estudio.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
-                                <a href="https://gallardo-pomodoro.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/pomodoro"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 11====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio11.jpg" alt="portfolio11">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Mi primera APP de React</h3>
-                                <p class="potafolio__description">Página simple de testimonios hecha con
-                                    react.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
-                                <a href="https://gallardo-first-react-app.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/MyFirstReactApp"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 20====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio20.jpg" alt="portfolio20">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Componente tarjeta de stats</h3>
-                                <p class="potafolio__description">Another challenge by Frontend
-                                    Mentor.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a href="https://gallardo-stats-preview-card-component.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/Stats-preview-card-component"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 19====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio19.jpg" alt="portfolio19">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Componente sumario de compras</h3>
-                                <p class="potafolio__description">Otro desafio de Frontend
-                                    Mentor.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a href="https://gallardo-order-summary-component.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/Order-summary-component"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 18====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio18.jpg" alt="portfolio18">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Vista previa carta NFT</h3>
-                                <p class="potafolio__description">Una carta con hover para vista previa de
-                                    NFT.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a href="https://gallardo-nft-preview-card-component.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/NFT-preview-card-component"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 17====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio17.jpg" alt="portfolio17">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Componente de código QR</h3>
-                                <p class="potafolio__description">Un pequeño componente con un código
-                                    QR.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a href="https://gallardo-qr-code-component.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/QR-code-component"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 16====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio16.jpg" alt="portfolio16">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Componente interactivo de calificación</h3>
-                                <p class="potafolio__description">Pequeño proyecto para poner en práctica las interacciones con el
-                                    manejo de DOM.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
-                                <a href="https://gallardo-interactive-rating-component.netlify.app/" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                                <a href="https://github.com/speedbuild98/Interactive-Rating-Component"  target="_blank" class="home__social-icon repo">
-                                    <i class="uil uil-github-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 2====================
+                    </li>
+                    <!--==================== PORTFOLIO 15====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio15.jpg" alt="portfolio15">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Rick and Morty APP</h3>
+                            <p class="potafolio__description">Una pequeña web que muestra todos los personajes de la
+                                serie.<BR><STRONG>[HTML-CSS-Bootstrap-React.js]</STRONG></p>
+                            <a href="https://gallardo-rickandmortyapp.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/Rick-and-Morty-App" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 14====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio14.jpg" alt="portfolio14">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Weather APP</h3>
+                            <p class="potafolio__description">Una aplicación que te muesta el clima de la ciudad que
+                                busques.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
+                            <a href="https://gallardo-clima.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/App-clima" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 13====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio13.jpg" alt="portfolio13">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Contador de clics</h3>
+                            <p class="potafolio__description">Una app simple que cuenta los clicks, hecha con
+                                React.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
+                            <a href="https://gallardo-contador-de-clics.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/contador-de-clics" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 12====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio12.jpg" alt="portfolio12">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Landing page</h3>
+                            <p class="potafolio__description">Una web simple hecha con
+                                Tailwind.<BR><STRONG>[HTML-CSS-JS-PHP-Tailwind]</STRONG></p>
+                            <a href="https://gallardo-proima.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/PROIMA-WEB" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 7====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio8.jpg" alt="portfolio3">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Portfolio</h3>
+                            <p class="potafolio__description">Estás acá.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                            <a href="https://gallardo-pomodoro.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/speedbuild98.github.io" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 4====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio2.jpg" alt="portfolio2">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Fitness Calculator</h3>
+                            <p class="potafolio__description">Una web para calcular IMC y
+                                macronutrientes.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
+                            <a href="https://gallardo-fit.netlify.app/fit/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/LIBERALISMO-MUSCULAR" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 1====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio1.jpg" alt="portfolio1">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Web Responsive simple</h3>
+                            <p class="potafolio__description">Una página web simple que se adapta a cualquier
+                                dispositivo.<BR><STRONG>[HTML-CSS-BOOTSTRAP]</STRONG></p>
+                            <a href="https://merlowebs-gallardo.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/merlowebs" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 3====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio7.jpg" alt="portfolio7">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">PDF-GENERATOR</h3>
+                            <p class="potafolio__description">Una web que convierte un formulario en .PDF para evitar el
+                                gasto
+                                de papel.<BR><STRONG>[HTML-CSS-JS-BOOTSTRAP]</STRONG></p>
+                            <a href="https://gallardo-pdf.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/PDF-Generator" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 5====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio5.jpg" alt="portfolio2">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">To Do List</h3>
+                            <p class="potafolio__description">Una web simple para anotar
+                                tareas.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                            <a href="https://gallardo-todolist.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/toDoList" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 5====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio3.jpg" alt="portfolio3">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Calculator JS</h3>
+                            <p class="potafolio__description">Una pequeña calculadora
+                                funcional.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                            <a href="https://gallardo-calculadora.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/calculadora-js" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 6====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio4.jpg" alt="portfolio3">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">POMODORO</h3>
+                            <p class="potafolio__description">Un reloj pomodoro para tiempos de concentración y
+                                estudio.<BR><STRONG>[HTML-CSS-JS]</STRONG></p>
+                            <a href="https://gallardo-pomodoro.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/pomodoro" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 11====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio11.jpg" alt="portfolio11">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Mi primera APP de React</h3>
+                            <p class="potafolio__description">Página simple de testimonios hecha con
+                                react.<BR><STRONG>[HTML-CSS-React.js]</STRONG></p>
+                            <a href="https://gallardo-first-react-app.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/MyFirstReactApp" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 20====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio20.jpg" alt="portfolio20">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Componente tarjeta de stats</h3>
+                            <p class="potafolio__description">Another challenge by Frontend
+                                Mentor.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a href="https://gallardo-stats-preview-card-component.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/Stats-preview-card-component" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 19====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio19.jpg" alt="portfolio19">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Componente sumario de compras</h3>
+                            <p class="potafolio__description">Otro desafio de Frontend
+                                Mentor.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a href="https://gallardo-order-summary-component.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/Order-summary-component" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 18====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio18.jpg" alt="portfolio18">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Vista previa carta NFT</h3>
+                            <p class="potafolio__description">Una carta con hover para vista previa de
+                                NFT.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a href="https://gallardo-nft-preview-card-component.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/NFT-preview-card-component" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 17====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio17.jpg" alt="portfolio17">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Componente de código QR</h3>
+                            <p class="potafolio__description">Un pequeño componente con un código
+                                QR.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a href="https://gallardo-qr-code-component.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/QR-code-component" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 16====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio16.jpg" alt="portfolio16">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Componente interactivo de calificación</h3>
+                            <p class="potafolio__description">Pequeño proyecto para poner en práctica las interacciones
+                                con el
+                                manejo de DOM.<BR><STRONG>[HTML-CS-React.js]</STRONG></p>
+                            <a href="https://gallardo-interactive-rating-component.netlify.app/" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/speedbuild98/Interactive-Rating-Component" target="_blank"
+                                class="home__social-icon repo">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <!--==================== PORTFOLIO 2====================
                                     <li class="portfolio__content grid swiper-slide splide__slide">
                                         <img class="portfolio__img" src="assets/img/portfolio6.jpg" alt="portfolio2">
             
@@ -889,163 +960,167 @@
                                             </a>
                                         </div>
                                     </li>   -->
-            
-                        <!--==================== PORTFOLIO 9====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio9.jpg" alt="portfolio9">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Formulario responsive</h3>
-                                <p class="potafolio__description">Un pequeño formulario que se adapta a cualquier
-                                    dispositivo.<BR><STRONG>[HTML-CSS]</STRONG></p>
-                                <a href="https://codepen.io/speedbuild98/pen/PoOvzLo" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <!--==================== PORTFOLIO 10====================-->
-                        <li class="portfolio__content grid swiper-slide splide__slide">
-                            <img class="portfolio__img" src="assets/img/portfolio10.jpg" alt="portfolio10">
-            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Página tributo</h3>
-                                <p class="potafolio__description">Una página super simple y básica.<BR><STRONG>[HTML-CSS]</STRONG>
-                                </p>
-                                <a href="https://codepen.io/speedbuild98/pen/WNXBQyr" target="_blank"
-                                    class="button xd button--flex button--small portfolio__button">
-                                    DEMO
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-            
-                    <!-- If we need navigation buttons -->
-                    <div class="botoncitos swiper-button-prev"></div>
-                    <div class="botoncitos swiper-button-next"></div>
-                </div>
-            </section>
 
-            <!--==================== CONTACTO ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contactame</h2>
-                <span class="section__subtitle">¡Escribime!</span>
+                    <!--==================== PORTFOLIO 9====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio9.jpg" alt="portfolio9">
 
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon "></i>
-                            
-                            <div>
-                                <h3 class="contact__title">Whatsapp</h3>
-                                <a target="_blank" href="https://wa.me/5492664017317">
-                                    <span class="contact__subtitle">+54 9 266 401-7317</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon "></i>
-                            
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <a href="mailto: lautaropectm98@gmail.com">
-                                    <span class="contact__subtitle">lautaropectm98@gmail.com</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            
-                            <div>
-                                <h3 class="contact__title">Ubicación</h3>
-                                    <span class="contact__subtitle">Argentina - Córdoba</span>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="https://formspree.io/f/xgedrlee"
-                    method="POST" class="contact_form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Nombre</label>
-                                <input placeholder="Tu nombre" type="name" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label><br>
-                                <input placeholder="Email" id="inputMail" type="email" name="email">
-                            </div>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">
-                                Asunto</label>
-                            <input placeholder="¿En qué te puedo ayudar?" type="subject" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label class="contact__label">Mensaje</label>
-                            <textarea placeholder="Coloca tu teléfono y tu mensaje por favor" name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <button id="botonMail" class="button button--flex" type="submit">Send<i class="uil uil-message button__icon"></i></button>
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Formulario responsive</h3>
+                            <p class="potafolio__description">Un pequeño formulario que se adapta a cualquier
+                                dispositivo.<BR><STRONG>[HTML-CSS]</STRONG></p>
+                            <a href="https://codepen.io/speedbuild98/pen/PoOvzLo" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
-                    </form>
-                </div>
-            </section>
-        </main>
+                    </li>
+                    <!--==================== PORTFOLIO 10====================-->
+                    <li class="portfolio__content grid swiper-slide splide__slide">
+                        <img class="portfolio__img" src="assets/img/portfolio10.jpg" alt="portfolio10">
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">       
-            <div class="footer__bg">
-                <div class="footer__container container grid">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Página tributo</h3>
+                            <p class="potafolio__description">Una página super simple y
+                                básica.<BR><STRONG>[HTML-CSS]</STRONG>
+                            </p>
+                            <a href="https://codepen.io/speedbuild98/pen/WNXBQyr" target="_blank"
+                                class="button xd button--flex button--small portfolio__button">
+                                DEMO
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="botoncitos swiper-button-prev"></div>
+                <div class="botoncitos swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACTO ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contactame</h2>
+            <span class="section__subtitle">¡Escribime!</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon "></i>
+
+                        <div>
+                            <h3 class="contact__title">Whatsapp</h3>
+                            <a target="_blank" href="https://wa.me/5492664017317">
+                                <span class="contact__subtitle">+54 9 266 401-7317</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon "></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <a href="mailto: lautaropectm98@gmail.com">
+                                <span class="contact__subtitle">lautaropectm98@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Ubicación</h3>
+                            <span class="contact__subtitle">Argentina - Córdoba</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xgedrlee" method="POST" class="contact_form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Nombre</label>
+                            <input placeholder="Tu nombre" type="name" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label><br>
+                            <input placeholder="Email" id="inputMail" type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">
+                            Asunto</label>
+                        <input placeholder="¿En qué te puedo ayudar?" type="subject" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label class="contact__label">Mensaje</label>
+                        <textarea placeholder="Coloca tu teléfono y tu mensaje por favor" name="message" id="" cols="0"
+                            rows="7" class="contact__input"></textarea>
+                    </div>
+
                     <div>
-                        <h1 class="footer__title">Leonel</h1>
-                        <span class="footer__subtitle">Frontend developer</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#certificates" class="footer__link">Certificates</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact me</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__social">
-                        <a href="https://www.linkedin.com/in/lautagallardogg/" target="_blank" class="home__social-icon linkedinxd">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/speedbuild98"  target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="https://cafecito.app/speedbuild"  target="_blank" class="home__social-icon">
-                            <i class="uil uil-coffee"></i>
+                        <button id="botonMail" class="button button--flex" type="submit">Send<i
+                                class="uil uil-message button__icon"></i></button>
                         </a>
                     </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Leonel</h1>
+                    <span class="footer__subtitle">Frontend developer</span>
                 </div>
 
-                <p class="footer__copy">"I want to be a Full-stack web developer."</p>
-            </div>  
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-        <script src="assets/splide-4.0.1/dist/js/splide.min.js"></script>   
-        <script>
-            new Splide( '.splide' ).mount();
-          </script>     
-    </body>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#certificates" class="footer__link">Certificates</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/lautagallardogg/" target="_blank"
+                        class="home__social-icon linkedinxd">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/speedbuild98" target="_blank" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://cafecito.app/speedbuild" target="_blank" class="home__social-icon">
+                        <i class="uil uil-coffee"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">"I want to be a Full-stack web developer."</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/splide-4.0.1/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide').mount();
+    </script>
+</body>
+
 </html>
