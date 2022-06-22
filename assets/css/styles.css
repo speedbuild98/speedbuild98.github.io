@@ -619,6 +619,7 @@ img {
   align-items: center;
   margin-bottom: var(--mb-2-5);
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .skills__icon,
@@ -1377,6 +1378,7 @@ width:100%;
 .xd{
   filter:none!important;
   animation: none;
+  margin-top: 1rem;
 }
 #no-demo{
   text-decoration: dashed;
