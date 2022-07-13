@@ -1,13 +1,13 @@
 # speedbuild98.github.io
-My portfolio
+
 This is my first portfolio attempt, I will update it as my knowledge improves.
 I am going through some very hard times where I am literally starting my life from scratch.
-I hope I can move on :c 
+I hope I can move on :c
 
 <h1 align="center">Hola 👋, soy Lautaro Gallardo</h1>
 <h3 align="center">Estudiante Full-stack web developer de Argentina</h3>
 
-- 🌱 Actualmente estoy aprendiendo **Frontend**
+- 🌱 Actualmente estoy aprendiendo **Front-End React**
 
 - 📫 Puedes contactarme en **lautaropectm98@gmail.com**
 
